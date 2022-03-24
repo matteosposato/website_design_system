@@ -3,20 +3,23 @@
 body {
     display: flex;
     flex-direction: column;
-    background: #f6d186;
+    background: #FEC5BB;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /*Style of header*/
 
 header {
-    background: #cbe2b0;
-    position: absolute;
+    background: rgb(232, 232, 228);
+    position: fixed;
+    z-index: 1;
     left: 0px;
     top: 0;
     width: 100%;
     height: 80px;
     box-shadow: 0 2px 6px #4ac3be;
+    border: 1px solid red;
 }
 
 header h1 {
@@ -25,6 +28,22 @@ header h1 {
     color: #4ac3be;
 }
 
+header nav {
+    display: flex;
+    position: relative;
+    float: right;
+    flex-direction: row;
+    align-items: flex-end;
+    top: 50%;
+    padding-right: 15px;
+    border: 1px solid red;
+    padding: 15px;
+    background-color: #ade8f4;
+}
+
+header ul img {
+    padding: 10px;
+}
 /*Style of 'colors' section*/
 
 .colors_section {
@@ -34,13 +53,9 @@ header h1 {
     border: 3px solid #f19292;
     width: 40%;
     height: 25%;
-    background-color: rgba(233, 239, 186, 0.3);
 }
 
 .colors_section h1 {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 400;
-    font-size: 30px;
     color: #f19292;
 }
 
@@ -60,6 +75,7 @@ header h1 {
         padding: 5px;
         font-family: 'Comfortaa', cursive;
         font-weight: lighter;
+        font-size: 20px;
     }
 
 .first_color {
@@ -113,17 +129,146 @@ header h1 {
 /*Style for 'fonts' section*/
 
 .fonts_section {
-    display: flex;
-    justify-content: center;
-    align-self: center;
     position: relative;
-    border: 1px solid red;
+    border: 3px solid #bee4d2;
     top: 80px;
-    margin: 25px;
+    margin-bottom: 45px;
+    margin-top: 20px;
     width: 65%;
+    align-self: center;
+    padding-bottom: 15px;
 }
 
 .fonts_section h1 {
+    color: #FEC89A;
+}
+
+.fonts_section .fonts {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.baloo2_font h5 {
+    display: inline;
+}
+
+.font_name {
+    text-decoration: underline;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.baloo2_font {
+    font-family: 'Baloo 2', cursive;
+    background-color: #FCD5CE;
+    color: #f4978e;
+    border: 2px solid #f4978e;
+}
+
+.montserrat_alternates_font {
+    font-family: 'Montserrat Alternates', cursive;
+    background-color: #d8e2dc;
+    color: #48cae4;
+    border: 2px solid #48cae4;
+}
+
+.overlock_font {
+    font-family: 'Overlock', cursive;
+    background-color: #FFD7BA;
+    color: #fcaf58;
+    border: 2px solid #fcaf58;
+}
+
+/*Style for 'text-styles' section*/
+
+.text_styles_section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    top: 50px;
+    border: 1px solid orange;
+    width: 60%;
+    height: auto;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.text_styles_section div {
+    border: 1px solid red;
+    padding: 15px 10px;
+    margin: 20px 5px;
+}
+
+.text_styles_section li {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text_styles_section h1 {
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+}
+
+.text_styles_section h2 {
+    font-size: 18px;
+}
+
+.text_styles_section ul {
+    padding-top: 10px;
+}
+
+.text_styles_section .h1 {
+    background-color: #F0FFC2;
+    color: #F1D00A;
+    border: 1px solid #F1D00A;
+}
+
+.text_styles_section .h2 {
+    background-color: #FFE4C0;
+    color: #FFBC80;
+    border: 2px solid #FFBC80;
+}
+
+.text_styles_section .p {
+    background-color: #FFBBBB;
+    color: #FF7BA9;
+    border: 2px solid #FF7BA9;
+}
+
+/*Style for multiple sections*/
+
+.colors_section, .fonts_section, .text_styles_section {
+    background-color: rgba(255, 229, 217, 0.9);
+}
+
+.colors_section h1, .fonts_section h1{
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
+    font-size: 30px;
+    color: #fec89a;
+}
+
+.normal, .italic, .bold {
+    font-size: 20px;
+}
+
+.baloo2_font, .montserrat_alternates_font, .overlock_font {
+    margin: 5px 10px;
+    padding: 15px 25px;
 }
