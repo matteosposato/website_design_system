@@ -257,7 +257,7 @@ header ul img {
     background-color: rgba(255, 229, 217, 0.9);
 }
 
-.colors_section h1, .fonts_section h1{
+.colors_section h1, .fonts_section h1, .text_styles_section .title{
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
     font-size: 30px;
